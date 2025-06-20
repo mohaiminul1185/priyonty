@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌸 For Orpa 🌸</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(145deg, #ffe6f0, #f0faff);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card {
+      background: white;
+      padding: 60px 50px;
+      border-radius: 40px;
+      box-shadow: 0 15px 40px rgba(255, 105, 180, 0.3),
+                  0 30px 60px rgba(100, 149, 237, 0.2),
+                  inset 0 0 15px rgba(0, 255, 200, 0.1);
+      max-width: 720px;
+      text-align: center;
+      animation: float 5s ease-in-out infinite;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #ff69b4;
+      text-shadow: 2px 2px 6px #ffaadd;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #333;
+      margin: 14px 0;
+      line-height: 1.6;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #666;
+      font-size: 18px;
+      margin: 25px 0;
+    }
+
+    .like-you {
+      font-weight: bold;
+      font-size: 28px;
+      color: #ff1493;
+      animation: popIn 1.2s ease-in-out;
+      text-shadow: 0 0 8px #ffc0cb;
+    }
+
+    .special-phrase {
+      font-size: 26px;
+      color: #1e90ff;
+      font-weight: bold;
+      margin-top: 30px;
+      animation: slideGlow 2s ease-in-out forwards;
+    }
+
+    .final {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #2e8b57;
+      font-weight: bold;
+      text-shadow: 1px 1px 6px #b0ffde;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideGlow {
+      0% { opacity: 0; transform: translateX(-50px); text-shadow: none; }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+        text-shadow: 0 0 10px #87cefa;
+      }
+    }
+
+    .flowers {
+      position: absolute;
+      width: 100%;
+      font-size: 38px;
+      animation: rotateFlowers 5s infinite linear;
+      text-align: center;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .top-flowers {
+      top: 10px;
+    }
+
+    .bottom-flowers {
+      bottom: 10px;
+      animation-delay: 2s;
+    }
+
+    @keyframes rotateFlowers {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Background flowers floating effect */
+    .falling-flowers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .falling-flowers span {
+      position: absolute;
+      display: inline-block;
+      color: pink;
+      animation: fall 10s linear infinite;
+      font-size: 24px;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Autoplay Music (must be .mp3 and in same folder) -->
+  <audio autoplay loop>
+    <source src="iwannabeyours.mp3" type="audio/mpeg" />
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- Falling flowers -->
+  <div class="falling-flowers">
+    <span style="left: 10%;">🌸</span>
+    <span style="left: 25%;">🌼</span>
+    <span style="left: 40%;">🌺</span>
+    <span style="left: 55%;">🌷</span>
+    <span style="left: 70%;">💮</span>
+    <span style="left: 85%;">🌹</span>
+  </div>
+
+  <!-- Card Content -->
+  <div class="card">
+    <div class="flowers top-flowers">🌸🌼🌷💮🌺🌹🌻🌼🌸</div>
+    <h1>My pretty priyonty 💗</h1>
+    <p>You came into my life like a breeze — soft, gentle, and unforgettable. 🌸</p>
+    <p>You're a rare flower that bloomed in the garden of my heart. 🌷</p>
+    <p>Even though we met on Facebook, you became closer than anyone else. 💞</p>
+
+    <div class="quote">
+      "In the quiet of my thoughts, your smile echoes the loudest."<br />
+      "Even stars feel shy when you look at them." ✨
+    </div>
+
+    <p class="my-butterfly">to my butterfly 💖</p>
+
+    <p class="special-phrase">You are a gift from God to me💙</p>
+
+    <p class="final">💐 I want to be with you forever 💐</p>
+
+    <div class="flowers bottom-flowers">🌺💮🌼🌸🌻🌷🌹🌸🌼</div>
+  </div>
+</body>
+</html>
